@@ -1,79 +1,41 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
+#include <stdlib.h>
 
 /**
- * print_listint - prints all elements of the linked list
- * @h: pointer to head of the list
+ * insert_node - inserts a number into a sorted list
+ * @head: pointer to the list
+ * @number: number to add
  * 
- * Return: number of nodes
+ * Return: address of the added node else NULL
  */
 
-size_t print_listint(const listint_t *h)
+listint_t *insert_node(listint_t **head, int number)
 {
-	const listint_t *current;
-	unsigned int num_nodes;
+	listint_t *old, *new, *current;
 
-	current = h;
-	num_nodes = 0;
-	while (current != NULL)
-	{
-		printf("%i\n", current->n);
-		current = current->next;
-		num_nodes++;
-	}
-
-	return (num_nodes);
-}
-
-/**
- * add_nodeint_end - adds a new node at the end of a listint_t list
- * @head: pointer to pointer of first node of listint_t list
- * @n: integer passed
- * 
- * Return: address of the new element, o/w NULL
- */
-
-listint_t *add_nodeint_end(listint_t **head, const int n)
-{
-	listint_t *new, *current;
-
-	current = *head;
+	if (head == NULL)
+    	return (NULL);
 
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
 
-	new->n = n;
-	new->next = NULL;
+	new->n = number;
+	old = NULL;
+	current = *head;
 
-	if (*head == NULL)
-		*head = new;
-	else
+	for (; current != NULL && current->n < number;)
 	{
-		while (current->next != NULL)
-			current = current->next;
-		current->next = new;
+		old = current;
+		current = current->next;
 	}
+
+	new->next = current;
+
+	if (old != NULL)
+		old->next = new;
+	else
+		*head = new;
 
 	return (new);
-}
-
-/**
- * free_listint - frees a listint_t list
- * @head: pointer to the list to be freed
- * 
- * Return: void
- */
-
-void free_listint(listint_t *head)
-{
-	listint_t *current;
-
-	while (head)
-	{
-		current = head;
-		head = head->next;
-		free(current);
-	}
 }
