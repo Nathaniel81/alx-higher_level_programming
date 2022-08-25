@@ -6,7 +6,7 @@ if __name__ == '__main__':
         print("{:d} arguments .".format(size - 1))
     elif size - 1 == 1:
         print("{:d} {:s}".format(size - 1, "argument:"))
-        print("{:d}: {:s}\n".format(1, sys.argv[1]), end='')
+        print("{:d}: {:s}\n".format(size - 1, sys.argv[size - 1]), end='')
     else:
         print("{:d} {:s}".format(size - 1, "arguments:"))
         for i in range(1, size):
