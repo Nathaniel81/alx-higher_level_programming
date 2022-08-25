@@ -4,6 +4,9 @@ if __name__ == '__main__':
     size = len(sys.argv)
     if size - 1 == 0:
         print("{:d} arguments .".format(size - 1))
+    elif size - 1 == 1:
+        print("{:d} {:s}".format(size - 1, "argument:"))
+        print("{:d}: {:s}\n".format(1, sys.argv[1]), end='')
     else:
         print("{:d} {:s}".format(size - 1, "arguments:"))
         for i in range(1, size):
