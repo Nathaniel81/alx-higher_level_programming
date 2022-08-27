@@ -6,8 +6,8 @@ def print_matrix_integer(matrix=[[]]):
     for items in matrix:
         for elements in items:
             if elements == matrix[i][itemLen]:
-                print("{:s}".format(elements), end='')
+                print("{:d}".format(elements), end='')
             else:
-                print("{:s}".format(elements), end=' ')
+                print("{:d}".format(elements), end=' ')
         i += 1
         print()
