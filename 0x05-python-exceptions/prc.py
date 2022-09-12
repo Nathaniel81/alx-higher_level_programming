@@ -145,9 +145,37 @@ my_l_1 = [10, 8, 4, 4]
 my_l_2 = [2, 0, "H", 2, 7]
 result = list_division(my_l_1, my_l_2, max(len(my_l_1), len(my_l_2)))
 print(result)
+
+def safe_print_integer_err(value):
+	try:
+		print("{:d}".format(value))
+	except (TypeError, ValueError):
+
+
+
+
+value = 89
+has_been_print = safe_print_integer_err(value)
+if not has_been_print:
+    print("{} is not an integer".format(value))
+
+value = -89
+has_been_print = safe_print_integer_err(value)
+if not has_been_print:
+    print("{} is not an integer".format(value))
+
+value = "School"
+has_been_print = safe_print_integer_err(value)
+if not has_been_print:
+    print("{} is not an integer".format(value))
+
+import sys
+v = 'k'
+try:
+    print("{:d}".format(v))
+except (TypeError, ValueError) as e:
+	print("Exception: {}".format(e), file=sys.stderr)
 '''
-
-
 
 
 
