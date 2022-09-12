@@ -108,10 +108,44 @@ a = 12
 b = 0
 result = safe_print_division(a, b)
 print("{:d} / {:d} = {}".format(a, b, result))
+
+from hashlib import new
+#ZeroDivisionError
+#TypeError
+#IndexError
+
+def list_division(my_list_1, my_list_2, list_length):
+	new = []
+	for i in range(list_length):
+		try:
+			new.append(my_list_1[i]/my_list_2[i])
+		except ZeroDivisionError:
+			print("division by 0")
+			new.append(0)
+			continue
+		except (TypeError, ValueError):
+			print("wrong type")
+			new.append(0)
+			continue
+		except IndexError:
+			print("out of range")
+			new.append(0)
+		finally:
+			pass
+	return new
+
+my_l_1 = [10, 8, 4]
+my_l_2 = [2, 4, 4]
+result = list_division(my_l_1, my_l_2, max(len(my_l_1), len(my_l_2)))
+print(result)
+
+print("--")
+
+my_l_1 = [10, 8, 4, 4]
+my_l_2 = [2, 0, "H", 2, 7]
+result = list_division(my_l_1, my_l_2, max(len(my_l_1), len(my_l_2)))
+print(result)
 '''
-
-
-
 
 
 
