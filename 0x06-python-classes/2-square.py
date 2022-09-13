@@ -2,9 +2,7 @@
 """Documentation for a square class"""
 
 
-
 class Square():
-
     """Sets the size of the square on instantation."""
 
     def __init__(self, size=0):
