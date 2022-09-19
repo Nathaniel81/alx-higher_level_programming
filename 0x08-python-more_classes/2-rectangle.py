@@ -5,6 +5,7 @@ Documentation for class that computes the perimeter of a rectangle perimeter
 
 
 class Rectangle:
+    """A class definition called rectangle"""
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -49,5 +50,4 @@ class Rectangle:
         """Computes the permeter of rectangle"""
         if self.__width == 0 or self.__height == 0:
             return 0
-        else:
-            return 2 * (self.__width + self.__height)
+        return 2 * (self.__width + self.__height)
