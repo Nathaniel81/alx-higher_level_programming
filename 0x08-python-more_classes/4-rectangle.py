@@ -76,7 +76,7 @@ class Rectangle:
             if i < self.__height - 1:
                 print()
         return emptStr
-	
+
     def __repr__(self):
         """
         return a string representation of the rectangle to be able
