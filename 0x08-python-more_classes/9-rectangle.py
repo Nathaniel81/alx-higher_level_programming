@@ -1,10 +1,6 @@
 #!/usr/bin/python3
 """Documentation for a Rectangle class"""
 
-
-from turtle import width
-
-
 class Rectangle:
     """class defination called Rectangle."""
     number_of_instances = 0
