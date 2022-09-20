@@ -1,8 +1,10 @@
 #!/usr/bin/python3
 """Documentation for a Rectangle class"""
 
+
 class Rectangle:
     """class defination called Rectangle."""
+
     number_of_instances = 0
     print_symbol = '#'
 
