@@ -78,7 +78,9 @@ Let's test the function with empty matrix or empty list of lists and not
 empty list. This operation will return empty list of lists itself.
 
 >>> matrix_divided([[]], 5)
-[[]]
+Traceback (most recent call last):
+...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Let's test the function with empty list and not empty list of list.
 
