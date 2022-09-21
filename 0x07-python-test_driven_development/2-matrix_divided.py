@@ -5,7 +5,7 @@
 
 def matrix_divided(matrix, div):
     msg = "matrix must be a matrix (list of lists) of integers floats"
-    msg2 = "dividion by zero"
+    msg2 = "division by zero"
     msg3 = "div must be a number"
     msg4 = "Each row of the matrix must have the same size"
 
