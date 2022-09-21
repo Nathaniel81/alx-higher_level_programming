@@ -8,9 +8,9 @@ Result: The function prints the square based on the value of the
 ``size`` parameter.
 
 >>> print_square = __import__('4-print_square').print_square
-====================================================================
+
 Testing for different valid ``size`` arguments.
-====================================================================
+
 >>> print_square(3)
 ###
 ###
@@ -67,6 +67,7 @@ TypeError: size must be an integer
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
+
 ====================================================================
 Testing the function with different ``size`` arguments less than 0
 ====================================================================
@@ -84,6 +85,7 @@ ValueError: size must be >= 0
 ====================================================================
 Testing for ``size`` arugment set to negative and less than 0
 ====================================================================
+
 >>> print_square(-0.78)
 Traceback (most recent call last):
 ...
@@ -93,9 +95,11 @@ TypeError: size must be an integer
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
+
 ====================================================================
 Testing when no argument is passed to it.
 ====================================================================
+
 >>> print_square()
 Traceback (most recent call last):
 ...
