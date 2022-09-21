@@ -9,7 +9,7 @@ def matrix_divided(matrix, div):
     msg3 = "div must be a number"
     msg4 = "Each row of the matrix must have the same size"
 
-    if matrix == None:
+    if matrix is None:
         raise TypeError(msg)
     if len(matrix) == 0:
         raise TypeError(msg)
