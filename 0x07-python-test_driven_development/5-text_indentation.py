@@ -4,6 +4,8 @@
 
 def text_indentation(text):
     """Prints a text with 2 new lines after these characters: ., ? and :"""
+    if type(text) != str:
+        raise TypeError("text must be a string")
 
     leng = len(text)
     i = 0

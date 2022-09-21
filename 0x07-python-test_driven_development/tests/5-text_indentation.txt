@@ -1,20 +1,6 @@
-====================================================================
-                                                                   =
-Generating Test Cases for ``5-text_indentation`` module.           =
-                                                                   =
-====================================================================
-
-====================================================================
-                                                                   =
-File: 5-text_indentation.txt                                       =
-Desc: This file contains most possible edge cases for the function =
-      ``text_indentation`` in the ``5-text_indentation`` module    =
-Author: Gizachew Bayness (Elec Crazy)                              =
-Date Created: Jul 24 2022                                          =
-                                                                   =
-====================================================================
-
-Result: The function prints a text with 2 new lines after each of these
+Generating Test Cases for ``5-text_indentation`` module.           
+                                                                   
+Testing a function  thats prints a text with 2 new lines after each of these
 characters: ., ? and :. There should be no space at the beginning or at
 the end of each printed line
 
@@ -59,30 +45,30 @@ Quae animi affectio suum cuique tribuens atque hanc, quam dico.
 <BLANKLINE>
 Utinam quidem dicerent alium alio beatiorem! Iam ruinas videres
 
->>> text_indentation("Hello World")
+>>> text_indentation("Python is awesome")
+Python is awesome
+
+>>> text_indentation("\nHello World")
+<BLANKLINE>
 Hello World
 
->>> text_indentation("\nElec Crazy")
-<BLANKLINE>
-Elec Crazy
+>>> text_indentation("          Nate Dempsey ")
+Nate Dempsey
 
->>> text_indentation("          Gizachew Bayness")
-Gizachew Bayness
-
->>> text_indentation("          \nElec.?     Crazy:.\n")
+>>> text_indentation("          \nNate.?     Dempsey:.\n")
 <BLANKLINE>
-Elec.
+Nate.
 <BLANKLINE>
 ?
 <BLANKLINE>
-Crazy:
+Dempsey:
 <BLANKLINE>
 .
 <BLANKLINE>
 <BLANKLINE>
 
->>> text_indentation("Gizachew Bayness (Elec Crazy).")
-Gizachew Bayness (Elec Crazy).
+>>> text_indentation("Best School (C isfun).")
+Best School (C isfun).
 <BLANKLINE>
 
 >>> text_indentation("   .   ?   \n :::          \n")
@@ -104,9 +90,7 @@ Kings12374658929*2***@#$1!()-+=
 
 >>> text_indentation("")
 
-Let's test the funtion with some invalid non-string inputs.
-The function raises a TypeError when non-string is passed to
-it as an argument.
+Testing for invalid non-string inputs.
 
 >>> text_indentation(76)
 Traceback (most recent call last):
@@ -128,8 +112,7 @@ Traceback (most recent call last):
 ...
 TypeError: text must be a string
 
-Let's test the function with no argument passed to it. If no argument is
-passed, a default TypeError for missing positional argument is raised.
+Testing for no argument passed to it
 
 >>> text_indentation()
 Traceback (most recent call last):
