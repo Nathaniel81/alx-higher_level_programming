@@ -1,5 +1,5 @@
-"""#!/usr/bin/python3
-Rectangle = __import__('9-rectangle').Rectangle"""
+#!/usr/bin/python3
+Rectangle = __import__('9-rectangle').Rectangle
 BR = __import__('7-base_geometry').BaseGeometry
 
 class Rectangle(BR):
