@@ -6,7 +6,7 @@ class MyList(list):
     """Inherits from the list class"""
 
     def __init__(self):
-        """Initializing this class with the parrent init method"""
+        """Initializing this class with the parent init method"""
         list.__init__(self)
 
     def print_sorted(self):
