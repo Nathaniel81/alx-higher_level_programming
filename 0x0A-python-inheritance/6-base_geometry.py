@@ -4,8 +4,6 @@
 
 class BaseGeometry:
     """Class definition"""
-    pass
-
 
 def area(self):
     """Raises an Exception"""
