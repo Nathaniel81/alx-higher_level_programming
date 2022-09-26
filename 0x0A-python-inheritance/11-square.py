@@ -6,7 +6,7 @@ R = __import__('9-rectangle').Rectangle
 
 
 class Square(R):
-    """Represents a class square"""
+    """Represents a Square class"""
 
     def __init__(self, size):
         """Instantiation"""
