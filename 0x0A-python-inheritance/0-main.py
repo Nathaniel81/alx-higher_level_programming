@@ -1,9 +1,9 @@
-"""#!/usr/bin/python3
-lookup = __import__('0-lookup').lookup"""
-def lookup(obj):
+#!/usr/bin/python3
+lookup = __import__('0-lookup').lookup
+"""def lookup(obj):
     #return obj.__dict__
     #return vars(obj)
-    return dir(obj)
+    return dir(obj)"""
 
 class MyClass1(object):
     pass

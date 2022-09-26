@@ -4,7 +4,7 @@
 
 def lookup(obj):
     """Returns the list of available attributes"""
-    #return obj.__dict__
-    #return vars(obj)
-    
+    """return obj.__dict__
+    return vars(obj)"""
+
     return dir(obj)
