@@ -27,3 +27,36 @@ True
 >>> my_list.print_sorted()
 [1, 2, 3, 4, 5]
 
+|||checking for empty objects
+
+>>> empObj = MyList()
+
+>>> print(empObj)
+[]
+
+>>> print_sorted(empObj)
+[]
+
+|||checking for negative values
+
+>>> ngVal = MyList()
+>>> ngVal.append(1)
+>>> ngVal.append(-4)
+>>> ngVal.append(-2)
+>>> ngVal.append(-3)
+>>> ngVal.append(-5)
+>>> ngVal.append(0)
+>>> print(ngVal)
+[1, -4, -2, -3, -5, 0]
+
+>>> print_sorted(ngVal)
+[-5, -4, -3, -2, 0, 1]
+
+|||checking for NULL objects
+
+>>> nullobj = MyList()
+
+>>> nullobj.append(NULL)
+Traceback (most recent call last):
+    ...
+NameError: name 'NULL' is not defined
