@@ -1,17 +1,29 @@
-txt module for MyList class
-===========================
+===================================================================
+Test cases for 1-my_list module.
+===================================================================
+===================================================================
+The function prints the list in ascending order
+===================================================================
+
+checking for module docstring
 
 >>> docLen = __import__('1-my_list').__doc__
 >>> len(docLen) > 1
 True
 
+checking for class docstring
+
 >>> clsDocln = __import__('1-my_list').MyList.__doc__
 >>> len(clsDocln) > 1
 True
 
+checking for method docstring
+
 >>> mtDocln = __import__('1-my_list').MyList.print_sorted.__doc__
 >>> len(mtDocln) > 1
 True
+
+checking for given testcases
 
 >>> MyList = __import__('1-my_list').MyList
 >>> print_sorted = __import__('1-my_list').MyList.print_sorted
@@ -28,7 +40,7 @@ True
 >>> my_list.print_sorted()
 [1, 2, 3, 4, 5]
 
-|||checking for empty objects
+checking for an empty objects
 
 >>> empObj = MyList()
 
@@ -38,7 +50,7 @@ True
 >>> print_sorted(empObj)
 []
 
-|||checking for negative values
+checking for negative values
 
 >>> ngVal = MyList()
 >>> ngVal.append(1)
@@ -53,7 +65,7 @@ True
 >>> print_sorted(ngVal)
 [-5, -4, -3, -2, 0, 1]
 
-|||checking for NULL objects
+checking for NULL objects
 
 >>> nullobj = MyList()
 
