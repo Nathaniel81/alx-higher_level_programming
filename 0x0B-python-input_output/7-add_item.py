@@ -13,5 +13,5 @@ lst = []
 if exists(filename):
     lst = load_from_json_file(filename)
 lst += sys.argv[1:]
-"""print(save_to_json_file(lst, filename))"""
+"""print(lst)"""
 save_to_json_file(lst, filename)
