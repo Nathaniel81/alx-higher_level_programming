@@ -11,6 +11,8 @@ dictionary = {
 with open("sample.json", "w") as outfile:
 	json.dump(dictionary, outfile)
 """
-with open("fj.json", "r") as F:
-    aa = json.load(F)
-print(aa)
+import sys
+
+args = sys.argv
+
+print(sys.argv[1:])
