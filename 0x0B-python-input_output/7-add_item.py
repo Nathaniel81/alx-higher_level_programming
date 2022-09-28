@@ -11,10 +11,9 @@ filename = "add_item.json"
 """with open(filename, "a+", encoding="utf-8") as myFile:
     save_to_json_file(sys.argv[1:], filename)
     load_from_json_file(filename)"""
-MylstObj = []
+lst = []
 if exists(filename):
-    MylstObj = load_from_json_file(filename)
+    lst = load_from_json_file(filename)
+lst += sys.argv[1:]
 
-MylstObj += sys.argv[1:]
-
-save_to_json_file(MylstObj, filename)
+save_to_json_file(lst, filename)
