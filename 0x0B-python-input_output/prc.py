@@ -11,8 +11,3 @@ dictionary = {
 with open("sample.json", "w") as outfile:
 	json.dump(dictionary, outfile)
 """
-import sys
-
-args = sys.argv
-
-print(sys.argv[1:])
