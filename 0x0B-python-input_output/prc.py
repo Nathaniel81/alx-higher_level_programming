@@ -1,10 +1,6 @@
-# Python program to write JSON
-# to a file
-
-
 import json
-
-# Data to be written
+from platform import java_ver
+"""
 dictionary = {
 	"name": "sathiyajith",
 	"rollno": 56,
@@ -14,3 +10,7 @@ dictionary = {
 
 with open("sample.json", "w") as outfile:
 	json.dump(dictionary, outfile)
+"""
+with open("fj.json", "r") as F:
+    aa = json.load(F)
+print(aa)
