@@ -10,17 +10,39 @@ dictionary = {
 
 with open("sample.json", "w") as outfile:
 	json.dump(dictionary, outfile)
+d = [
+    [1, 4, 6],
+    [3, 5, 7]
+]
 """
-class A:
-    def __init__(self, name, val):
-        self.name = name
-        self.val = val
-    def  setttt(self, dic):
-        for i in dic.keys():
-            if i in self.__dict__.keys():
-                self.__dict__[i] = dic[i]
+#for i in d:
+#print('{}'.format(', '.join(i)))
+#print('{}'.format(', '.join(map(str, d))))
+#for row in d:
+#       print("[{}]".format(",".join([str(x) for x in row])))
+new_f = ""
+with open("append_after_100.txt") as f:
+    for stR in f.readlines():
+        new_f += stR
+        if 'Python' in stR:
+            new_f += "\"C is fun!\"\n"
+"""print(new_f)"""
+with open("append_after_100.txt", "w") as f:
+    f.write(new_f)
+            
+        
 
-x = A('Ab', 45)
-dic1 = {'name': 'bb'}
-x.setttt(dic1)
-print(x.name)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
