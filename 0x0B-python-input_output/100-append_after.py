@@ -12,5 +12,5 @@ def append_after(filename="", search_string="", new_string=""):
             if search_string in stR:
                 new_f += new_string
     """print(new_f)"""
-    with open("append_after_100.txt", "w", encoding="utf-8") as Myfile:
+    with open(filename, "w", encoding="utf-8") as Myfile:
         Myfile.write(new_f)
