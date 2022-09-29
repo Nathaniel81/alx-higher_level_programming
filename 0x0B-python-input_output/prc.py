@@ -11,4 +11,3 @@ dictionary = {
 with open("sample.json", "w") as outfile:
 	json.dump(dictionary, outfile)
 """
-
