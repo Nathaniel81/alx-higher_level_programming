@@ -22,7 +22,6 @@ class Rectangle(Base):
     @width.setter
     def width(self, w):
         """Sets the width"""
-        #if type(w) == int:
         if isinstance(w, int):
             if w <= 0:
                 raise ValueError("width must be > 0")
@@ -70,7 +69,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, y):
-        """Setter for y"""    
+        """Setter for y"""
         if type(y) == int:
             if y < 0:
                 raise ValueError("y must be >= 0")
