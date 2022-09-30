@@ -1,3 +1,4 @@
+#from curses import keyname
 import json
 from platform import java_ver
 """
@@ -20,29 +21,15 @@ d = [
 #print('{}'.format(', '.join(map(str, d))))
 #for row in d:
 #       print("[{}]".format(",".join([str(x) for x in row])))
-new_f = ""
-with open("append_after_100.txt") as f:
-    for stR in f.readlines():
-        new_f += stR
-        if 'Python' in stR:
-            new_f += "\"C is fun!\"\n"
-"""print(new_f)"""
-with open("append_after_100.txt", "w") as f:
-    f.write(new_f)
-            
-        
+"""            
+#xx = [1, [[4], 2]] - - - - - - - - - - - ?
+xx = [1]
+x = [[4]]
+z = x.append(2)
+xx.append(z)
+print(xx)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+triangle = [[1], [1, 1], [1, 2, 1], [1, 3, 3, 1], [1, 4, 6, 4, 1]]
+for row in triangle:
+        print("[{}]".format(",".join([str(x) for x in row])))
+"""
