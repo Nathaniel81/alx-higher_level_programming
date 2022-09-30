@@ -5,6 +5,7 @@
 class Base:
     """The “base” of all other classes"""
     __nb_objects = 0
+
     def __init__(self, id=None):
         """Instatntiation"""
         if id is None:
