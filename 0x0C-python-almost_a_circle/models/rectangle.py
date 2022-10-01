@@ -97,13 +97,17 @@ class Rectangle(Base):
         return '{} ({}) {}/{} - {}/{}'.format(__class__.__name__, self.id,
         self.__x, self.__y, self.__width, self.__height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assigns an argument to each attribute"""
-        try:
-            self.id = args[0]
-            self.__width = args[1]
-            self.__height = args[2]
-            self.__x = args[3]
-            self.__y = args[4]
-        except IndexError:
-            pass
+        if kwargs:
+            for key, value in kwargs.items():
+                self.__setattr__(key, value)
+        else:
+            try:
+                self.id = args[0]
+                self.__width = args[1]
+                self.__height = args[2]
+                self.__x = args[3]
+                self.__y = args[4]
+            except IndexError:
+                pass

@@ -26,3 +26,13 @@ class Cube(Square):
         face_area = super().area()
         return face_area * self.length
 """
+#from nntplib import ArticleInfo
+
+
+def aa(*args, **kwargs):
+    if not kwargs:
+        print('Y')
+    for i, j in kwargs.items():
+        print(i, j, type(i), type(j))
+        
+aa(2, 4, 7, 8, a='d')
