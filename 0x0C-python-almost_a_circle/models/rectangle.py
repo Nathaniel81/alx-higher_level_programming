@@ -95,5 +95,5 @@ class Rectangle(Base):
         """return f'[{__class__.__name__}] ({self.id}) {self.__x}/{self.__y} -
         {self.__width}/{self.__height}'"""
         return '{} ({}) {}/{} - {}/{}' \
-    .format(__class__.__name__, self.id, self.__x, \
-    self.__y,self.__width, self.__height)
+        .format(__class__.__name__, self.id, self.__x,
+        self.__y,self.__width, self.__height)
