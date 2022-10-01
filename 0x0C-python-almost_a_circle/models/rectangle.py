@@ -6,7 +6,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
-    """a class that inherits from Base"""
+    """A class that inherits from Base"""
     def __init__(self, width, height, x=0, y=0, id=None):
         self.width = width
         self.height = height
@@ -89,8 +89,9 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
+        """returns [Rectangle] (<id>) <x>/<y> - <width>/<height>"""
         """return f'[{__class__.__name__}] ({self.id}) {self.__x}/{self.__y} -
         {self.__width}/{self.__height}'"""
-        retstr = '{} ({}) {}/{} - {}/{}'.format(__class__.__name__, self.id,
+        return '{} ({}) {}/{} - {}/{}'.format(__class__.__name__, self.id,
                                                 self.__x, self.__y,
                                                 self.__width, self.__height)
