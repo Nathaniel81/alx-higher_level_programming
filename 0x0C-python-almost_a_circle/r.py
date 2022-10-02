@@ -1,18 +1,11 @@
-from unicodedata import name
+class Calculator:
+    #@classmetho
+    def addNumbers(x, y):
+        return x + y
 
 
-class x:
-    def __init__(self, name):
-        self.name = name
-    def dct(self, **kwargs):
-        for k, v in kwargs.items():
-            if k in self.__dict__.keys():
-                self.__setattr__(k, v)
+# create addNumbers static method
+#Calculator.addNumbers(3, 3)
+#= staticmethod(Calculator.addNumbers)
 
-        """a = []
-        for i in self.__dict__.keys():
-            a.append(i)
-        return a"""
-
-z = x("fff")
-print(dir(z))
+print('Product:', Calculator.addNumbers(15, 110))
