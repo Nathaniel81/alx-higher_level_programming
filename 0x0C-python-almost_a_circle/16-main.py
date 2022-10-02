@@ -1,4 +1,4 @@
-"""#!/usr/bin/python3"""
+#!/usr/bin/python3
 """ 16-main """
 from models.rectangle import Rectangle
 
