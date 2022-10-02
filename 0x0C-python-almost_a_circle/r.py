@@ -15,8 +15,4 @@ class x:
         return a"""
 
 z = x("fff")
-print(z.name)
-z.dct(nam="ddd")
-print(z.name)
-setattr(z, "name", "LL")
-print(z.name)
+print(dir(z))
