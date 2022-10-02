@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Documentation for a Square class """
 
+from webbrowser import get
 from models.rectangle import Rectangle
 
 class Square(Rectangle):
@@ -41,3 +42,11 @@ class Square(Rectangle):
                 self.__setattr__(keys, values)
         else:
             pass
+
+    def to_dictionary(self):
+        """Square instance to dictionary representation"""
+        return {'id': getattr(self, 'id'),
+            'size' : getattr(self, 'size'),
+            'x' : getattr(self, 'x'),
+            'y' : getattr(self, 'y')
+        }
