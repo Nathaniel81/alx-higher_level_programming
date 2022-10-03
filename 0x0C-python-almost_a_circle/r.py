@@ -1,22 +1,12 @@
-from unicodedata import name
+class Rectangle:
+    def __init__(self, val, value):
+        self.val = val
+        self.value = value
+    def __str__(self):
+        return f'{self.val} - is the val'
 
-
-class D:
-    def __init__(self, name):
-        self.name = name
-class Calculator(D):
-    def __init__(self, name):
-        super().__init__(name)
-    #super().__init__(name)
-    def addNumbers(x, y):
-        return x + y
-    @classmethod
-    def ff(cls):
-        print(cls.__name__)
-
-# create addNumbers static method
-#Calculator.addNumbers(3, 3)
-#= staticmethod(Calculator.addNumbers)
-
-#print('Product:', Calculator.addNumbers(15, 110))
-print('Product:', Calculator.ff())
+r1 = Rectangle(10, 7)
+r2 = Rectangle(2, 4)
+list_rectangles_input = [r1, r2]
+for i in list_rectangles_input:
+    print(i)

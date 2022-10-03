@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" Documentation for a Square class """
+""" This module contains a class called Square
+that inherits from the Base class """
 
 from webbrowser import get
 from models.rectangle import Rectangle

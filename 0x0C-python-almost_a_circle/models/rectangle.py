@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Documentation for a Rectagnle class"""
+""" This module implements a class called Rectangle that
+inherits from the Base class """
 
 
 from models.base import Base
