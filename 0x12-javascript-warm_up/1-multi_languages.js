@@ -1,5 +1,5 @@
 #!/usr/bin/node
 
-const myList = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
-
-myList.forEach(lst=>console.log(lst));
+console.log('C is fun');
+console.log('Python is cool');
+console.log('JavaScript is amazing');
