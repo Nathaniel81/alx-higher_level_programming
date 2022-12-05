@@ -1,5 +1,6 @@
 #!/usr/bin/node
 
 const myList = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
-
-const lst = myList.forEach(lst=>console.log(lst));
+for (let i = 0; i < myList.length; i++) {
+  console.log(myList[i]);
+}
