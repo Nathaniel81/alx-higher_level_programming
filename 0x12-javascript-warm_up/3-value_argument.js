@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const Argv = process.Argv;
+const Argv = process.argv;
 if (Argv[2]) {
   console.log(Argv[2]);
 } else {
