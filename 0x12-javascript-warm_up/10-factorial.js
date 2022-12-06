@@ -10,7 +10,7 @@ function factorial (n) {
   
   const argv = process.argv;
   const num = parseInt(argv[2]);
-  if (isNaN(num)) {
+  if (!num) {
 	console.log('1');
   } else {
 	console.log(factorial(num));
