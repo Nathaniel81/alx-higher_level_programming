@@ -10,14 +10,14 @@ if (args.length < 4) {
   for (let i = 3; i < args.length; i++) {
     if (fstbig < parseInt(args[i])) {
       fstbig = parseInt(args[i]);
-        idx = i;
+      idx = i;
     }
   }
   args.splice(idx, 1);
   let scndbig = parseInt(args[2]);
 
   for (let i = 3; i < args.length; i++) {
-    if (scndbig < parseInt(args[i])){
+    if (scndbig < parseInt(args[i])) {
       scndbig = parseInt(args[i]);
     }
   }
