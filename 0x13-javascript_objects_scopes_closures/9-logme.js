@@ -1,5 +1,6 @@
-let argc = 0;
+#!/usr/bin/node
+let args = 0;
 exports.logMe = function (item) {
-	console.log(argc+':', item);
-	argc++;
-}
+  console.log(args+':', item);
+  args++;
+};
