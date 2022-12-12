@@ -12,9 +12,9 @@ if __name__ == "__main__":
             passwd=sys.argv[2],
             db=sys.argv[3]
             )
-cur = db.cursor()
-cur.execute("""SELECT * FROM states WHERE BINARY name like 'N%' ORDER BY id""")
-result = cur.fetchall()
-
-for rows in result:
-    print(rows)
+    cur = db.cursor()
+    cur.execute("""SELECT * FROM states WHERE BINARY name like 'N%' ORDER BY id""")
+    result = cur.fetchall()
+    
+    for rows in result:
+        print(rows)
