@@ -13,7 +13,7 @@ if __name__ == "__main__":
         db=sys.argv[3]
     )
 cur = db.cursor()
-cur.execute("""SELECT * FROM states WHERE name like '%N' ORDER BY id""")
+cur.execute("""SELECT * FROM states WHERE BINARY name like '%N' ORDER BY id""")
 result = cur.fetchall()
 
 for rows in result:
