@@ -18,4 +18,4 @@ if __name__ == "__main__":
     if firstState is None:
         print("Nothing")
     else:
-        print(firstState)
+        print(f'{firstState.id}: {firstState.name}')
