@@ -13,6 +13,6 @@ if __name__ == "__main__":
         if jsonRsp == {}:
             print("No result")
         else:
-            print(f"[{jsonRsp.get(id)}] {jsonRsp.get('name')}")
+            print(f"[{jsonRsp.get('id')}] {jsonRsp.get('name')}")
     except ValueError:
         print("Not a valid JSON")
