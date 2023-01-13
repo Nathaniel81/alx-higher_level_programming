@@ -94,4 +94,3 @@ class Square():
                 print("")
 
         return ret_val
-    
