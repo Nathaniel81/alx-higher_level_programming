@@ -7,7 +7,7 @@ Doc
 
 def print_stats(size, status_codes):
     """
-    Prints the metrics
+    This function prints the metrics
     """
     print("File size: {}".format(size))
     for key in sorted(status_codes):
@@ -20,15 +20,15 @@ if __name__ == "__main__":
     size = 0
     status_codes = {}
     valid_codes = ['200', '301', '400', '401', '403', '404', '405', '500']
-    counts = 0
+    count = 0
 
     try:
         for line in sys.stdin:
-            if counts == 10:
+            if count == 10:
                 print_stats(size, status_codes)
-                counts = 1
+                count = 1
             else:
-                counts += 1
+                count += 1
 
             line = line.split()
 
