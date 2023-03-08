@@ -15,3 +15,15 @@ request(args[2], function (error, response, body) {
     console.log(count);
   }
 });
+/*const url = 'https://swapi-api.hbtn.io/api/films/5'
+
+req(url, (err, res, data)=>{
+	if (err){console.log(err);}
+	else {
+		let r = JSON.parse(data);
+		var lst = r.characters.filter((char)=>
+			char.includes('https://swapi-api.hbtn.io/api/people/82/')
+		);
+		console.log(lst.length);
+	};
+});*/
