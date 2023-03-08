@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Holberton School</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+      .red {
+        color: #FF0000;
+      }
+    </style>
+  </head>
+  <body>
+    <header> 
+      First HTML page
+    </header>
+    <div id="red_header">Red header</div>
+    <footer>
+      Holberton School - 2017
+    </footer>
+    <script>
+		$("#red_header").click(function(){
+			$("header").toggleClass("red");
+		});
+		// document.addEventListener("DOMContentLoaded", function(){
+		// 	document.querySelector("#red_header").addEventListener("click", function(){
+		// 		document.querySelector("header").classList.add("red");
+			// });
+		// });
+	</script>
+  </body>
+</html>

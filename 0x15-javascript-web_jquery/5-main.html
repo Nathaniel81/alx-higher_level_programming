@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Holberton School</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <header> 
+      First HTML page
+    </header>
+    <br />
+    <div id="add_item">Add item</div>
+    <br />
+    <ul class="my_list">
+      <li>Item</li>
+    </ul>
+    <footer>
+      Holberton School - 2017
+    </footer>
+    <script>
+		$("#add_item").click(function(){
+			$(".my_list").append("<li>Item</li>");
+		});
+		// document.getElementById("add_item").addEventListener("click", function(){
+			// const newItem = document.createElement("li");
+			// newItem.innerText = "Item";
+			// 
+			// document.querySelector(".my_list").appendChild(newItem);
+		// });
+			
+			
+	</script>
+  </body>
+</html>

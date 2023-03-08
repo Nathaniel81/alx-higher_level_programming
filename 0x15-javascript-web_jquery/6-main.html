@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Holberton School</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <header> 
+      First HTML page
+    </header>
+    <br />
+    <div id="update_header">Update the header</div>
+    <br />
+	<!-- <input type="text" id="myInput" value="Hello"> -->
+	<!-- <a href="http://google.com">Google</a> -->
+	<!-- <a href="http://bing.com">Bing</a> -->
+
+    <footer>
+      Holberton School - 2017
+    </footer>
+    <script>
+		$("#update_header").click(function(){
+			$("header").text("New Header!!!");
+		});
+		// document.querySelector("#update_header").addEventListener("click", function(){
+			// document.querySelector("header").textContent = "New Header !!!";
+		// });
+
+		// var value = $("#myInput").val();
+		// console.log(value); // Output: "Hello"
+// 
+		// Set the value of the input field
+		// $("#myInput").val("New value");
+// 
+		// Get the href attribute of the first <a> element
+		// var href = $("a").attr("href");
+		// console.log(href); // Output: "http://google.com"
+		// 
+		// Set the href attribute of all <a> elements
+		// $("a").attr("href", "http://example.com");
+	</script>
+
+  </body>
+</html>
